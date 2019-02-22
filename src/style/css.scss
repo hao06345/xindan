@@ -1,0 +1,51 @@
+.w{
+    width: 1200px;
+    margin:0 auto;
+}
+/*header*/
+header{
+    height: 24px;
+    border-bottom: 1px solid #ccc;
+    background:#F1F1F1;
+    div{
+        height: 150px;
+        position: absolute;
+        top: 24px;
+        left: 75px;
+        display: none;
+        z-index: 999;
+        li{
+            width: 160px;
+            height: 200px;
+        }
+        li:nth-child(1){
+            border-right: 1px solid #ccc;
+        }
+        img{
+            width: 150px;
+
+        }
+    }
+    .top_nav{
+        height:24px;
+        line-height: 24px;
+       
+        li{
+            width: 78px;
+            padding-left:16px;
+            a{
+                display: block;
+            }
+        }
+        li:nth-child(1){
+            background:url("../resource/img/topbar_sprite150428.png") 2px 7px no-repeat;
+        }
+        li:nth-child(2){
+            background:url("../resource/img/topbar_sprite150428.png") 2px -127px no-repeat;
+        }
+        li:nth-child(2):hover{
+            background:url("../resource/img/topbar_sprite150428.png") 2px -152px no-repeat;
+            text-decoration:underline;
+        }
+    }
+}
