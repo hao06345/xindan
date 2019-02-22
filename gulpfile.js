@@ -43,7 +43,7 @@ gulp.task('img', img)
 //js
 function js () {
 	return gulp.src('./src/js/**/*.js')
-		.pipe(concat('output.js'))
+		.pipe(concat('xindan.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/js'))
 }
@@ -79,7 +79,7 @@ gulp.task('server', server)
 var task = gulp.parallel(watch, server)
 
 gulp.task('default', task);
-
+                                                                           
 
 
 
