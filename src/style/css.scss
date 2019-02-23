@@ -7,7 +7,7 @@ header{
     height: 24px;
     border-bottom: 1px solid #ccc;
     background:#F1F1F1;
-    div{
+    .erweima{
         height: 150px;
         position: absolute;
         top: 24px;
@@ -30,22 +30,152 @@ header{
         height:24px;
         line-height: 24px;
        
-        li{
+       ul.l li.r{
             width: 78px;
             padding-left:16px;
             a{
                 display: block;
             }
         }
-        li:nth-child(1){
+        ul.l li.r:nth-child(2){
             background:url("../resource/img/topbar_sprite150428.png") 2px 7px no-repeat;
         }
-        li:nth-child(2){
+        ul.l li.r:nth-child(1){
             background:url("../resource/img/topbar_sprite150428.png") 2px -127px no-repeat;
         }
-        li:nth-child(2):hover{
+        ul.l li.r:nth-child(1):hover{
             background:url("../resource/img/topbar_sprite150428.png") 2px -152px no-repeat;
             text-decoration:underline;
+        }
+        ul.l li.r:nth-child(2):hover{
+            background:url("../resource/img/topbar_sprite150428.png") 2px -13px no-repeat;
+        }
+        ul.r li.l:nth-of-type(7){
+            width: 74px;
+            height: 24px;
+            line-height: 24px;
+            span{
+                background:url("../resource/img/sprite_v140304.png") 0px -25px no-repeat;
+                width: 6px;
+                height: 6px;
+                margin-top: 8px;
+                margin-right:8px;
+            }
+            div{
+                position: absolute;
+                right:71px;
+                width: 130px;
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                border-bottom:1px solid #ccc;
+                box-shadow: 1px 1px 1px #aaa,
+                            2px 2px 2px  #aaa;
+                display: none;
+                p:nth-of-type(1){
+                    color: #f60;
+                    font-size: 18px;
+                }
+                p:nth-of-type(2){
+                    color:#000;
+                    font-size: 14px;
+                }   
+                ul{
+                    display: flex;
+                } 
+                li{
+                    flex: 1;
+                    background: skyblue;
+                    margin:6px;
+                }       
+            }   
+        }
+        ul.r li.l:nth-of-type(6){
+            width: 74px;
+            height:24px;
+            line-height: 24px; 
+        } 
+        ul.r li.l:nth-of-type(5){
+            width: 74px;
+            height: 24px;
+            line-height: 24px; 
+            span{
+                background:url("../resource/img/sprite_v140304.png") 0px -25px no-repeat;
+                width: 6px;
+                height: 6px;
+                margin-top: 8px;
+                margin-right:8px;
+            }
+            div{
+                position: absolute;
+                right: 222px;
+                height: 30px;
+                width: 100px;
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                border-bottom:1px solid #ccc;
+                box-shadow: 1px 1px 1px #aaa,
+                            2px 2px 2px  #aaa;
+                display: none;
+                a{
+                    color: blue;
+                    text-decoration:underline;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                }
+
+            }
+        }
+        ul.r li.l:nth-of-type(4){     
+            width: 74px;
+            height: 24px;
+            line-height: 24px; 
+            span{
+                background:url("../resource/img/sprite_v140304.png") 0px -25px no-repeat;
+                width: 6px;
+                height: 6px;
+                margin-top: 8px;
+                margin-right:8px;
+            }
+            div{
+                position: absolute;
+                right: 295px;
+                height: 30px;
+                width: 100px;
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                border-bottom:1px solid #ccc;
+                box-shadow: 1px 1px 1px #aaa,
+                            2px 2px 2px  #aaa;
+                display: none;
+                a{
+                    color: blue;
+                    text-decoration:underline;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                }
+
+            }
+        }
+        ul.r li.l:nth-of-type(3){
+            width: 158px;
+            height: 24px;
+            text-align: left;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        ul.r li.l:nth-of-type(2){
+            width: 43px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+        }
+        ul.r li.l:nth-of-type(1){
+            width: 43px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            border-right: 1px solid #ccc;
+            margin-top: 4px;
         }
     }
 }

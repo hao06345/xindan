@@ -42,15 +42,22 @@ function img() {
 gulp.task('img', img)
 //js
 function js () {
-	return gulp.src('./src/js/**/*.js')
+	return gulp.src('./src/js/*.js')
 		.pipe(concat('xindan.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/js'))
 }
 gulp.task('js', js)
+function jQuery () {
+	return gulp.src('./src/js/vendor/**/*.js')
+		.pipe(concat('jQuery.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('./dist/js/vendor'))
+}
+gulp.task('jQuery', jQuery)
 
 //并行
-var build = gulp.parallel(index,img,js,html,sass);
+var build = gulp.parallel(index,img,js,html,sass,jQuery);
 gulp.task('build',build);
 
 //创建任务实现自动刷新
