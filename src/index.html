@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./css/css.css">
     
 </head>
-<body>
+<body style="height:2000px;">
     <script src="./js/vendor/jQuery.js"></script>
+    <!-- 上端导航栏加搜索框logo -->
     <header id="header">
        <section class="top_nav w">
            
@@ -78,6 +79,7 @@
             </ul>
         </div>
     </header>
+    <!-- 蓝的导航栏加购物车 -->
     <nav id="nav">   
         <section class="nav_top w">
             <ul class="l">
@@ -88,10 +90,19 @@
                 <li class="l"><a href="javascript:;">爱车配</a></li>
                 <li class="l"><a href="javascript:;">二手宝库</a></li>
             </ul>
+            <ul class="r">
+                <li class="l">
+                    <a href="javascript:;">购物车<span>0</span>件<span></span></a>
+                    <div>您还没有购买商品,快去挑选吧</div>
+                </li>
+                <li class="l"><a href="javascript:;">收藏提醒<span></span></a>
+                    <div>请登录后查看<a href="javascript:;">登录</a></div>
+                </li>
+            </ul>
         </section>
     </nav>
     <div id="banner" class="w">
-        <section class="nav_right">
+        <section class="nav_left">
             <ul class="l">
                 <li class="li_1">
                     <div>
@@ -108,42 +119,50 @@
                             <a href="javascript:;">数码包</a>
                         </p>
                     </div>
+                    <div class="div_none">  
+                    </div>
                 </li>
                 <li class="li_2">
-                        <div>
-                            <p class="li_2_p1">
-                                <span></span>
-                                <a href="javascript:;">电脑</a>
-                                <a href="javascript:;">外设</a>
-                                <a href="javascript:;">办公</a>
-                                <a href="javascript:;">》</a>   
-                            </p>
-                            <p class="li_2_p2">
-                                <a href="javascript:;">平板</a>
-                                <a href="javascript:;">笔记本</a>
-                                <a href="javascript:;">路由器</a>
-                            </p>
-                            <p class="li_2_p3">
-                                <a href="javascript:;">耳机耳麦</a>      
-                            </p>
-                        </div>
+                    <div>
+                        <p class="li_2_p1">
+                            <span></span>
+                            <a href="javascript:;">电脑</a>
+                            <a href="javascript:;">外设</a>
+                            <a href="javascript:;">办公</a>
+                            <a href="javascript:;">》</a>   
+                        </p>
+                        <p class="li_2_p2">
+                            <a href="javascript:;">平板</a>
+                            <a href="javascript:;">笔记本</a>
+                            <a href="javascript:;">路由器</a>
+                        </p>
+                        <p class="li_2_p3">
+                            <a href="javascript:;">耳机耳麦</a>      
+                        </p>
+                    </div>
+                    <div class="div_none">
+                          
+                    </div>
                 </li>
                 <li class="li_3">
-                        <div>
-                            <p class="li_3_p1">
-                                <span></span>
-                                <a href="javascript:;">家用电器</a>
-                                <a href="javascript:;">》</a>   
-                            </p>
-                            <p class="li_3_p2">
-                                <a href="javascript:;">净化器</a>
-                                <a href="javascript:;">美容仪</a>
-                                <a href="javascript:;">吸尘器</a>
-                            </p>
-                            <p class="li_3_p3">
-                                <a href="javascript:;">微波炉</a>      
-                            </p>
-                        </div>
+                    <div>
+                        <p class="li_3_p1">
+                            <span></span>
+                            <a href="javascript:;">家用电器</a>
+                            <a href="javascript:;">》</a>   
+                        </p>
+                        <p class="li_3_p2">
+                            <a href="javascript:;">净化器</a>
+                            <a href="javascript:;">美容仪</a>
+                            <a href="javascript:;">吸尘器</a>
+                        </p>
+                        <p class="li_3_p3">
+                            <a href="javascript:;">微波炉</a>      
+                        </p>
+                    </div>
+                    <div class="div_none">
+                          
+                    </div>
                 </li>
                 <li class="li_4">
                     <div>
@@ -183,6 +202,85 @@
                     </div>
                 </li>
             </ul>
+        </section>
+        <section class="nav_banner">
+            <div class="nav_banner_top">
+                <ul class="jingdong_list">
+                    <li class="jingdong_current"><a href="#">
+                            <img src="./resource/img/771x245 (1).jpg" alt="">
+                    </a></li>
+                    <li><a href="#">
+                            <img src="./resource/img/771x245 (2).jpg" alt="">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./resource/img/771x245 (3).jpg" alt="">
+                    </a></li>
+                    <li><a href="#">
+                            <img src="./resource/img/771x245.jpg" alt="">
+                    </a></li>
+                </ul>
+
+                <ul class="jingdong_circle">
+                    <li class="jingdong_focus">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+            <div class="nav_banner_bottom">
+                <p>
+                    <span class="l">限时抢购</span>
+                    <span>剩余时间</span>
+                    <span class="r"><a href="javascript:;">更多抢购商品</a></span>
+                </p>
+                <ul>
+                    <li><a href="javascript:;">
+                        <img src="./resource/img/A10-30T-7Y2.jpg" alt="">
+                        <p>vivo NEX 双屏版 AI三摄 游戏手机 10GB+128GB 冰原蓝 移动联通电信全网通4G手机
+                            <span>¥4998.00</span></p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="./resource/img/A10-30T-7Y2.jpg" alt="">
+                        <p>Apple iPhone XR (A2108) 128GB 蓝色 移动联通电信4G手机 双卡双
+                            <span>¥6199.00</span>
+                        </p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="./resource/img/A10-30T-7Y2.jpg" alt="">
+                        <p>
+                            (含黑色键盘)微软(Microsoft)Surface Go 二合一平板电脑 10英寸 4G内存 64G存储 wifi 银灰色 <span> ¥3248.00</span>
+                        </p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="./resource/img/A10-30T-7Y2.jpg" alt="">
+                        <p>
+                            (华硕(ASUS) RT-AC86U 2900M AC 双频 低辐射 智能无线千兆路由器
+                             <span>¥849.00</span>
+                        </p>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="nav_right">
+            <div class="">
+                <ul class="jingdong_list">
+                    <li class="jingdong_current"><a href="#">
+                            <img src="./resource/img/1.jpg" alt="">
+                    </a></li>
+                    <li><a href="#">
+                            <img src="./resource/img/2.jpg" alt="">
+                    </a></li>
+                </ul>
+                <!-- <ul class="jingdong_circle">
+                    <li class="jingdong_focus">1</li>
+                    <li>2</li>
+                </ul> -->
+            </div>
+            <!-- <ul>
+                <li>
+                    <a href="javascript:;"><img src="./resource/img/230x218.jpg" alt=""></a>
+                </li>
+            </ul>    -->
         </section>
     </div>
     <script src="./js/xindan.js"></script>
