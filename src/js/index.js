@@ -82,7 +82,7 @@ function slideTo(index){
     document.querySelector('.jingdong_focus').className = '';
     document.querySelectorAll('.jingdong_circle li')[index].className = ('jingdong_focus');
 }
-var len = document.querySelectorAll('.jingdong_list li').length-2;
+var len = document.querySelectorAll('.jingdong_list li').length;
 var currentIndex = 0;
 function toRight(){
     currentIndex++
@@ -103,7 +103,7 @@ var id;
 function autoPlay (){
 id = setInterval(function(){
    toRight();
-}, 1000)
+}, 2000)
 }
 autoPlay()
 function stopPlay (){
@@ -123,6 +123,126 @@ lis[i].onclick = function () {
 }
 }
 
+//京东轮播图2右侧
+function slideTo_2(index){
+    document.querySelector('.jingdong_2_current').className = '';
+    document.querySelectorAll('.jingdong_2_list li')[index].className = 'jingdong_2_current';
+    document.querySelector('.jingdong_2_focus').className = '';
+    document.querySelectorAll('.jingdong_2_circle li')[index].className = ('jingdong_2_focus');
+}
+var len_2 = document.querySelectorAll('.jingdong_2_list li').length;
+var currentIndex_2 = 0;
+function toRight_2(){
+    currentIndex_2++
+    if(currentIndex_2 === len_2){
+        currentIndex_2 = 0;
+    }
+    slideTo_2(currentIndex_2);
+}
+function toLeft_2 () {
+    currentIndex_2--
+    if(currentIndex_2 === -1){
+        currentIndex_2 = len_2 - 1;
+    }
+    slideTo_2(currentIndex_2);
+}
+// autoPlay
+var id_2;
+function autoPlay_2 (){
+id_2 = setInterval(function(){
+   toRight_2();
+}, 1000)
+}
+autoPlay_2()
+function stopPlay_2(){
+clearInterval(id_2);
+}
+document.querySelector('.jingdong_2_list').onmouseover = function (){
+stopPlay_2();
+}
+document.querySelector('.jingdong_2_list').onmouseout = function (){
+autoPlay_2();
+}
+var lis_2 = document.querySelectorAll('.jingdong_2_circle li');
+for(var i = 0 ; i < lis_2.length ; i++){
+    lis_2[i].count = i;
+lis[i].onmouseover = function () {
+    slideTo_2(this.count);
+}
+}
+//猜喜欢
+$('.like .li_1').on('mouseover',function(){
+    $('.like .ul_none_1').show();
+    $('.like .ul_none_2').hide();
+    $('.like .ul_none_3').hide();
+    $('.like .ul_none_4').hide();
+    $('.like .li_1').css({
+        background : '#fff'
+    })
+    $('.like .li_2').css({
+        background : '#ccc'
+    })
+    $('.like .li_3').css({
+        background : '#ccc'
+    })
+    $('.like .li_4').css({
+        background : '#ccc'
+    })
+})
+$('.like .li_2').on('mouseover',function(){
+    $('.like .ul_none_2').show();
+    $('.like .ul_none_1').hide();
+    $('.like .ul_none_3').hide();
+    $('.like .ul_none_4').hide();
+    $('.like .li_2').css({
+        background : '#fff'
+    })
+    $('.like .li_1').css({
+        background : '#ccc'
+    })
+    $('.like .li_3').css({
+        background : '#ccc'
+    })
+    $('.like .li_4').css({
+        background : '#ccc'
+    })
+})
+$('.like .li_3').on('mouseover',function(){
+    $('.like .ul_none_3').show();
+    $('.like .ul_none_2').hide();
+    $('.like .ul_none_1').hide();
+    $('.like .ul_none_4').hide();
+    $('.like .li_3').css({
+        background : '#fff'
+    })
+    $('.like .li_2').css({
+        background : '#ccc'
+    })
+    $('.like .li_1').css({
+        background : '#ccc'
+    })
+    $('.like .li_4').css({
+        background : '#ccc'
+    })
+})
+$('.like .li_4').on('mouseover',function(){
+    $('.like .ul_none_4').show();
+    $('.like .ul_none_2').hide();
+    $('.like .ul_none_3').hide();
+    $('.like .ul_none_1').hide();
+    $('.like .li_4').css({
+        background : '#fff'
+    })
+    $('.like .li_2').css({
+        background : '#ccc'
+    })
+    $('.like .li_3').css({
+        background : '#ccc'
+    })
+    $('.like .li_1').css({
+        background : '#ccc'
+    })
+})
 
 
 
