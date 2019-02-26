@@ -56,8 +56,23 @@ function jQuery () {
 }
 gulp.task('jQuery', jQuery)
 
+function singin () {
+	return gulp.src('./src/js/singin.js')
+		.pipe(concat('singin.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('./dist/js'))
+}
+gulp.task('singin', singin)
+
+function login() {
+	return gulp.src('./src/js/login.js')
+		.pipe(concat('login.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('./dist/js'))
+}
+gulp.task('login', login)
 //并行
-var build = gulp.parallel(index,img,js,html,sass,jQuery);
+var build = gulp.parallel(index,img,js,html,sass,jQuery,login);
 gulp.task('build',build);
 
 //创建任务实现自动刷新
