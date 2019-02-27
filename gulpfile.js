@@ -72,7 +72,7 @@ function login() {
 }
 gulp.task('login', login)
 //并行
-var build = gulp.parallel(index,img,js,html,sass,jQuery,login);
+var build = gulp.parallel(index,img,js,html,sass,jQuery,login,singin);
 gulp.task('build',build);
 
 //创建任务实现自动刷新
@@ -87,6 +87,7 @@ function watch() {
 	gulp.watch('./src/js/**/*.js', js)
 	gulp.watch('./src/html/*.html', html)
 	gulp.watch('./src/style/**/*.scss', sass)
+	gulp.watch('./src/js/singin.js', singin)
 }
 gulp.task('watch', watch)
 
