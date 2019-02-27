@@ -368,6 +368,42 @@
     }
 }
 /*banner*/
+
+#banner .nav_left .box ul{
+	width:545px ;
+	height:62px ;
+	line-height: 60px;
+	margin-left:20px;
+}
+#banner .nav_left .box ul:nth-child(1){
+	border-bottom: 1px solid #000;
+}
+#banner .nav_left .box ul:nth-child(1) li.l a{
+	font-size: 17px;
+	color: red;
+	margin-left: 33px;
+} 
+#banner .nav_left .box  ul .color_hei{
+	color: #000;
+	font-size: 15px;
+	font-variant: 900;
+	margin-left: 33px;
+
+}
+#banner .nav_left .box  ul li a{
+	margin-left: 10px;
+}
+
+#banner .nav_left .box .ul_tu{
+	width: 190px;
+	height:355px ;
+	position: absolute;
+	top: 65px;
+	left: 546px;
+}
+#banner .nav_left .box .ul_tu li:nth-child(2){
+    margin-top: 40px;
+}
 #banner{
     height: 505px;
     .nav_left{
@@ -420,14 +456,13 @@
                     position: absolute;
                     z-index: 99;
                     width: 795px;
-                    height: 500px;
+                    height:450px;
                     border: 1px solid #ccc;
                     left: 247px;
                     top: 152px;
                     box-shadow: 2px 2px 2px #aaa;
                     background: #fff;
                     display: none;
-                    background: yellow;
                 }
             }
             .li_1:hover .div_none{
@@ -487,14 +522,13 @@
                     position: absolute;
                     z-index: 99;
                     width: 795px;
-                    height: 500px;
+                    height: 450px;
                     border: 1px solid #ccc;
                     left: 164px;
                     top: 0px;
                     box-shadow: 2px 2px 2px #aaa;
                     background: #fff;
                     display: none;
-                    background: red;
                 }  
             }
             .li_2:hover .div_none{
@@ -551,14 +585,13 @@
                     position: absolute;
                     z-index: 99;
                     width: 795px;
-                    height: 500px;
+                    height: 450px;
                     border: 1px solid #ccc;
                     left: 164px;
                     top: 0px;
                     box-shadow: 2px 2px 2px #aaa;
                     background: #fff;
                     display: none;
-                    background: blue
                 }
             }
             .li_3:hover .div_none{
@@ -1177,3 +1210,16 @@
         }
     }
 }
+#footer{
+    float: left;
+    height: 280px;
+    div.w{
+      height: 204px;
+      img{
+        margin-top: 100px;
+        cursor: pointer;
+        margin-left: 170px;
+      }
+    }
+  }
+  

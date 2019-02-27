@@ -3,9 +3,10 @@
     margin: 0 auto;
 }
 #header {
-    height: 111px;
+    height: 130px;
     border-bottom: 1px solid #ccc;
     background: #F1F1F1;
+    overflow: hidden;
   }
   
   #header .erweima {
@@ -147,14 +148,100 @@
   #header .top_nav ul.r li.l:nth-of-type(3):hover div{
       display: block;
   }
+#main{
+  height: 390px;
+  background: #F9F9F9;
+  overflow: hidden;
+  h4{
+    background: #F9F9F9;
+    text-align: right;
+    font-weight: 100;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    margin-top:10px;
+    a{
+      color: #f60;
+      font-size: 14px;
+    }
+  }
+  img{
+    display: block;
+  }
+  input{
+    display: block;
+    height: 31px;
+    outline: none;
+  }
+  img:nth-of-type(1){
+    margin-top:20px;
+    margin-left: 147px;
+  }
+  input:nth-of-type(1){
+    border: 1px solid #aaa;
+    margin-top: 40px;
+    margin-left: 400px;
+    width: 257px;
+    background: #F9F9F9;
+  }
+  span:nth-of-type(1){
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #333;
+    float: left;
+    margin-top: 45px;
+    margin-left: 323px;
+
+  }
+  input:nth-of-type(2){
+    width: 134px;
+    border: 1px solid #aaa;
+    margin-top: 30px;
+    margin-left: 400px;
+    background: #F9F9F9;
+  }
+  span:nth-of-type(2){
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #333;
+    float: left;
+    margin-top: 35px;
+    margin-left: 308px;
+  }
+  img:nth-of-type(2){
+    float: left;
+    margin-top: -32px;
+    margin-left: 547px;
+  }
+  input:nth-of-type(3){
+    width: 257px;
+    border: 1px solid #aaa;
+    margin-top: 30px;
+    margin-left: 401px;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    background: #E1E1E1;
+    cursor: pointer;
+  }
+}
 
 
 
 
 
 
-
-
+  #footer{
+    height: 204px;
+    div.w{
+      height: 204px;
+      img{
+        margin-top: 70px;
+        cursor: pointer;
+      }
+    }
+  }
 
 
 
