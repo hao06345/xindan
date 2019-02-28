@@ -244,6 +244,64 @@ $('.like .li_4').on('mouseover',function(){
     })
 })
 
+//淘宝宝banner
+
+var liWidth_6 = document.querySelector('.list li').offsetWidth;
+var len_6 = document.querySelector('.list').childElementCount;
+var list_6 = document.querySelector('.list');
+var count_6 = 0;
+var slideTo_6 = function(index_6) {
+    var dist_6 = -liWidth_6 * index_6;
+    
+    var map = {
+     "-1": len_6-1,
+        0: 0,
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 0,
+        5: 1
+    }
+    var focusIndex = map[index_6];
+    document.querySelector('.focus').className = '';
+    document.querySelectorAll('.circle li')[focusIndex].className = 'focus';
+
+    if (index_6 === -2){ 
+        list_6.style.transitionDuration = '0s';
+        list_6.style.transform = 'translate3d(' + -liWidth_6*(len_6-1) + 'px,0px,0px)';
+        setTimeout(function(){
+            count_6 = len_6-2;
+            list_6.style.transitionDuration = '';
+            list_6.style.transform = 'translate3d(' + -liWidth_6*count_6 + 'px,0px,0px)';
+        },23)
+        return;
+    }
+  
+    if(index_6 === len_6-1){
+        list_6.style.transitionDuration = '0s';
+        list_6.style.transform = 'translate3D(0px,0px,0px)'
+        setTimeout(function () {
+            count_6 = 1;
+            list_6.style.transitionDuration = '';
+            list_6.style.transform = 'translate3d(' + -liWidth_6 + 'px,0px,0px)';
+        },50)
+        return;
+    }
+    list_6.style.transform = 'translate3D(' + dist_6 + 'px,0px,0px)';
+}
+
+var id_6;
+var toRight_6 = function () {
+    count_6 ++;
+    if (count_6 > 4){
+        count_6 = 0
+    }
+    slideTo_6(count_6)
+}
+var autoPlay_6 = function () {
+    id_6 = setInterval(toRight_6,1000);
+}
+autoPlay_6();
 
 
 

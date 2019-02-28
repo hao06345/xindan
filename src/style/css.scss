@@ -1098,15 +1098,17 @@
                 border-bottom : 1px solid #aaa;
                 .phone_left_top{
                     height: 207px;
+                    li.top{
+                        padding-top: 20px;
+                        margin-left: 20px;
+                    }
                     li{
                         float: left;
                         width: 200px;
                         height: 207px;
                         font-size: 12px;
                         line-height: 20px;
-                        margin-left: 13px;
-                        margin-right: 13px;
-                        margin-top: 20px;
+                        // margin-left: -5px;
                         p{
                             margin-top: 10px;
                             text-align: left;
@@ -1222,4 +1224,45 @@
       }
     }
   }
+
+
+#main .phone .phone_left div .phone_left_top li .list {
+    width: 3000px;
+    height: 454px;
+    list-style: none;
+    transition: all .5s;
+}
+#main .phone .phone_left div .phone_left_top li .list li{
+    float: left;
+    width: 481px;
+}
+
+#main .phone .phone_left div .phone_left_top li ul.circle{
+    width: 200px;
+    height: 20px;
+    list-style: none;
+    position: absolute;
+    left: 350px;
+    bottom: 20px;
+    z-index: 2;
+}
+#main .phone .phone_left div .phone_left_top li .circle li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left:8px;
+    background: rgba(0, 0, 0, .7); 
+    cursor: pointer; 
+    
+}
+#main .phone .phone_left div .phone_left_top li .circle .focus{
+    border-radius: 50%;
+    background:#f60; 
+    
+}
+#main .phone .phone_left div .phone_left_top li{
+    position: relative;
+    overflow: hidden;
+}
   
